@@ -238,7 +238,6 @@ h2#personagens {
     background: rgba(30, 41, 59, 0.5);
     padding: 30px;
     border-radius: 12px;
-    border-left: 4px solid #38bdf8;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -344,6 +343,13 @@ h2#personagens {
     height: 200px;
     background: #1e293b;
     border-radius: 10px;
+    transition: 0.3s;
+    border: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+.video-item iframe:hover{
+    border-color: #38bdf8;
+    box-shadow: 0 5px 15px rgba(56, 189, 248, 0.2);
 }
 
 /* FOOTER */

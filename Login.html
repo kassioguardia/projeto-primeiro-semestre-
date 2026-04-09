@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Hikari to Kage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="site/css/style-2.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html">
+      <img src="site/imagens/logp.png" alt="logo do jogo">
+      </a> 
+      <a href="index.html" class="logo-link">
+      <span class="logo-text">hikari to kage</span>
+      </a>
+    </div>
+
+    <div class="menu">
+      <a href="#">inicio</a>
+      <a href="#">sobre</a>
+      <a href="#">contatos</a>
+      <a href="#">login</a>
+    </div>
+  </div>
+
+  <!-- HERO / LOGIN -->
+  <div class="hero">
+    <div class="login-box">
+      <h2>Login</h2>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Digite seu email">
+      </div>
+
+      <div class="input-group">
+        <label>Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha">
+      </div>
+
+      <button class="btn" onclick="login()">Entrar</button>
+
+      <div class="error" id="erro"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function login() {
+      const email = document.getElementById("email").value;
+      const senha = document.getElementById("senha").value;
+      const erro = document.getElementById("erro");
+
+      erro.textContent = "";
+
+      if (!email || !senha) {
+        erro.textContent = "Preencha todos os campos!";
+        return;
+      }
+
+      if (email === "admin@email.com" && senha === "123456") {
+        alert("Login realizado com sucesso!");
+        window.location.href = "home.html";
+      } else {
+        erro.textContent = "Email ou senha incorretos!";
+      }
+    }
+  </script>
+
+</body>
+</html>

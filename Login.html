@@ -21,10 +21,10 @@
     </div>
 
     <div class="menu">
-      <a href="#">inicio</a>
+      <a href="index.html">inicio</a>
       <a href="#">sobre</a>
-      <a href="#">contatos</a>
-      <a href="#">login</a>
+      <a href="index.html#contatos">contatos</a>
+      <a href="cadastro.html">cadastra-se</a>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
 
       <div class="input-group">
         <label>Email</label>
-        <input type="email" id="email" placeholder="Digite seu email">
+        <input type="email" id="email" placeholder="Digite um email válido">
       </div>
 
       <div class="input-group">
@@ -45,6 +45,9 @@
 
       <button class="btn" onclick="login()">Entrar</button>
 
+      <div class="esqueceu-a-senha">
+      <a href="cadastro.html" class="cadastro">Cadastrar-se</a>
+       </div>
       <div class="error" id="erro"></div>
     </div>
   </div>
@@ -63,9 +66,8 @@
         return;
       }
 
-      if (email === "admin@email.com" && senha === "123456") {
-        alert("Login realizado com sucesso!");
-        window.location.href = "home.html";
+      if (email === "kassio@gmail.com" && senha === "123") {
+        window.location.href = "jogo.html";
       } else {
         erro.textContent = "Email ou senha incorretos!";
       }

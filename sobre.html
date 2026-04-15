@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="site/imagens/logp.png">
+    <title>Hikari to kage, ninja no monogatar</title>
+    <link rel="stylesheet" href="site/css/style-sobre.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">
+            <img src="site/imagens/logp.png" alt="logo do jogo">
+            </a>
+             <a href="index.html" class="logo-link">
+                    <span class="logo-text">hikari to kage</span>
+                </a>
+        </div>
+       
+        <nav>
+            <a href="index.html">inicio</a>
+            <a href="sobre.html">sobre</a>
+            <a href="index.html#contatos">contatos</a>
+            <a href="cadastro.html">cadastre-se</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sobre o Jogo</h1>
+            <p><h2 id="titulo-jogo"></h2>
+
+<p id="descricao-jogo"></p>
+
+<p><strong>Gênero:</strong> <span id="genero"></span></p>
+
+<p><strong>Plataforma:</strong> <span id="plataforma"></span></p>
+
+<p><strong>Modo:</strong> <span id="modo"></span></p></p>
+        </div>
+    </section>
+
+   <section class="sobre-jogo">
+    <p>
+        Mais do que um simples jogo, <strong>Hikari to Kage</strong> apresenta uma experiência imersiva que combina 
+        uma narrativa envolvente com forte inspiração na cultura japonesa do período feudal. A obra se destaca 
+        por suas referências autênticas, tanto na linguagem quanto nos elementos culturais, proporcionando 
+        profundidade e identidade ao projeto.
+    </p>
+
+    <p>
+        Sua estética, embora minimalista, é cuidadosamente elaborada, transmitindo significado e intenção em cada detalhe. 
+        O uso simbólico das cores desempenha um papel fundamental na construção da narrativa, associando emoções humanas 
+        a elementos visuais. Nesse contexto, dois inimigos mortais — representando forças opostas — são levados a cooperar 
+        para atingir seus objetivos, simbolizando o equilíbrio por meio das cores <strong>branco</strong> e <strong>preto</strong>.
+    </p>
+
+    <p>
+        Além disso, outros personagens reforçam essa simbologia, como o <strong>ninja verde</strong>, que representa a avareza, 
+        e o antagonista principal, um <strong>general</strong> associado à cor <strong>vermelha</strong>, simbolizando a raiva — 
+        considerada a emoção mais perigosa para aqueles que buscam o equilíbrio.
+    </p>
+
+    <p>
+        Complementando a experiência, o jogo apresenta uma jogabilidade acessível e dinâmica, pensada para atrair 
+        especialmente o público mais jovem, sem abrir mão de profundidade temática.
+    </p>
+</section>
+
+</body>
+<script>
+/* DADOS DO JOGO */
+const nomeJogo = "Hikari to Kage";
+const descricao = "Um jogo de ação stealth onde ninjas rivais precisam cooperar para sobreviver.";
+const genero = "Ação / Stealth";
+const plataforma = "PC e Mobile";
+const modo = "Multiplayer Local";
+
+/* INJETANDO NO HTML */
+document.getElementById("titulo-jogo").textContent = nomeJogo;
+document.getElementById("descricao-jogo").textContent = descricao;
+document.getElementById("genero").textContent = genero;
+document.getElementById("plataforma").textContent = plataforma;
+document.getElementById("modo").textContent = modo;
+</script>
+</html>

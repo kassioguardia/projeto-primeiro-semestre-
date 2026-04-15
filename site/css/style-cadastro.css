@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #020617;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: bold;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* CENTRALIZAÇÃO */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+/* FORMULÁRIO */
+.form-box {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #0f172a;
+    color: white;
+}
+
+.input-group input:focus {
+    border: 1px solid #38bdf8;
+}
+
+/* BOTÃO */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #38bdf8, #6366f1);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* TEXTO FINAL */
+.footer-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.footer-text a {
+    color: #38bdf8;
+    text-decoration: none;
+}

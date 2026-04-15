@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="site/css/style.css">
 </head>
 
-<body>
-
-    <!-- HEADER -->
+<body class="conteudo-sensivel">
     <header class="header">
+        <div class="btn-tema">
+            <button onclick="toggleTheme()" class="theme-btn">☀️</button>
+        </div>
+
         <div class="container header-container">
 
-            <!-- LOGO -->
             <div class="logo">
                 <a href="index.html">
                     <img src="site/imagens/logp.png" alt="logo do jogo">
@@ -25,7 +26,6 @@
                 </a>
             </div>
 
-            <!-- NAV -->
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="#inicio">inicio</a></li>
@@ -38,60 +38,54 @@
         </div>
     </header>
 
-    <!-- MAIN -->
     <main>
 
-        <!-- HERO SECTION -->
-        <section class="hero" id="inicio">
-            <div class="hero-banner">
+        <section class="principal" id="inicio">
+            <div class="banner-principal">
 
-                <!-- IMAGEM PRINCIPAL -->
-                <div class="hero-image">
+                <div class="imagem-banner">
                     <img src="site/imagens/banner.png">
                 </div>
 
-                <!-- BOTÃO JOGAR -->
-                <div class="hero-overlay">
+                <div class="btn-jogar">
                     <a href="login.html" class="btn-play">JOGAR</a>
                 </div>
 
             </div>
 
-            <!-- CARDS / ATALHOS -->
-            <div class="container cards-container">
-                <a href="#historia" class="card">
+            <div class="container atalhos-container">
+                <a href="#historia" class="atalho">
                     <h3>História</h3>
                     <p>clique e Explore a narrativa principal do jogo.</p>
                 </a>
 
-                <a href="#personagens" class="card">
+                <a href="#personagens" class="atalho">
                     <h3>Personagens</h3>
                     <p>clique e Conheça os guerreiros principais e outros personagens</p>
                 </a>
 
-                <a href="#gameplay" class="card">
-                    <h3>gameplay</h3>
-                    <p>clique e veja um pouco mais sobre Mecânicas e o jogo em funcionamento</p>
+                <a href="#Mecânicas" class="atalho">
+                    <h3>Mecânicas</h3>
+                    <p>clique e veja um pouco mais sobre nosso multplayer local e suas Mecânicas </p>
                 </a>
 
-                <a href="#videos" class="card">
-                    <h3>Vídeos</h3>
-                    <p>clique e veja um trecho do jogo em funcionamento</p>
+                <a href="#Gameplay" class="atalho">
+                    <h3>Gameplay</h3>
+                    <p>clique e veja fotos e videos do jogo em funcionamento</p>
                 </a>
             </div>
         </section>
 
-        <!-- SEÇÃO 1 -->
-        <section class="content-section" id="historia">
-            <div class="container content-grid">
+        <section class="seção-de-conteudo" id="historia">
+            <div class="container conteudo-grid">
 
-                <div class="content-text">
-                    <div class="titles-row">
+                <div class="seção">
+                    <div class="titulo-da-historia">
                         <h2>historia</h2>
                         <h2 id="personagens">personagens</h2>
                     </div>
-                    <div class="story-section">
-                        <div class="story-block">
+                    <div class="seção-historia">
+                        <div class="bloco-de-historia">
                             <p>Durante cinco séculos, dois clãs de mercenários shinobis coexistiram nas sombras. Unidos apenas pela tradição, eram marcados por uma rivalidade implacável — disputas por dinheiro, território, poder e contratos moldavam suas histórias com sangue e silêncio. Mas o tempo não perdoa nem mesmo os mais letais. Os novos valores da sociedade moderna começaram a sufocar a existência dessas famílias ancestrais. O mundo já não precisava de sombras… e os clãs estavam à beira da extinção.</p>
 
                             <p>Foi nesse cenário de decadência que surgiu uma traição cuidadosamente arquitetada. O general da Primeira Divisão da Polícia do Japão, percebendo a fragilidade dos clãs, colocou em prática um plano cruel. Ele convocou os dois maiores líderes: <span class="character-name">Sana-Jyang</span>, chefe do Clã das Agulhas Brancas, e <span class="character-name">Kyin-Lee</span>, líder do Clã das Facas Negras. Sob o pretexto de missões urgentes e distantes, enviou ambos para longe de seus territórios.</p>
@@ -100,13 +94,19 @@
 
                             <p>Movidos pelo desespero e pela fúria, os dois líderes seguiram até o local indicado. Lá, não encontraram soldados comuns, mas sim o homem por trás de tudo: o samurai-chefe, responsável pela segurança nacional. Com olhar frio e voz firme, ele declarou: <em>"Se querem suas famílias de volta… exterminem todos os ninjas procurados e me tragam seus contratos."</em></p>
 
-                            <p>Sem escolha, antigos inimigos foram forçados a se tornar aliados. Agora, <span class="character-name">Sana-Jyang</span> e <span class="character-name">Kyin-Lee</span> precisariam lutar lado a lado, caçando ninjas de otros clãs — homens que, até então, compartilhavam da mesma tradição que eles. A partir desse ponto, precisam trabalhar juntos para eliminar ninjas de outros clãs e recuperar suas famílias.</p>
+                            <p>Sem escolha, antigos inimigos foram forçados a se tornar aliados. Agora, <span class="nome-dos-personagens">Sana-Jyang</span> e <span class="nome-dos-personagens">Kyin-Lee</span> precisariam lutar lado a lado, caçando ninjas de otros clãs — homens que, até então, compartilhavam da mesma tradição que eles. A partir desse ponto, precisam trabalhar juntos para eliminar ninjas de outros clãs e recuperar suas famílias.</p>
                         </div>
-                        <div class="images-section">
-                            <div class="content-images-grid">
-                                <div class="image-placeholder"></div>
-                                <div class="image-placeholder"></div>
-                                <div class="image-placeholder"></div>
+                        <div class="seção-de-imagens">
+                            <div class="conteudo-imagens-grid">
+                                <div class="imagens-placeholder">
+                                    <img src="site/imagens/ChatGPT Image 12 de abr. de 2026, 18_03_33.png">
+                                </div>
+                                <div class="imagens-placeholder">
+                                    <img src="site/imagens/ChatGPT Image 12 de abr. de 2026, 18_03_38.png">
+                                </div>
+                                <div class="imagens-placeholder">
+                                    <img src="site/imagens/Ninja vs samurai_ inimigos em contraste.png">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,49 +115,65 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 2 -->
-        <section class="content-section alt" id="gameplay">
+        <section class="content-section alt" id="Mecânicas">
             <div class="container content-grid">
 
                 <div class="content-text">
-                    <h2>Gameplay</h2>
+                    <h2>Mecânicas</h2>
                     <p>
-                        
+                        Nosso jogo é focado no multiplayer local, oferecendo a possibilidade de jogar com amigos e familiares no mesmo computador ou celular. Conta com controles simples e fáceis, além de uma jogabilidade leve e divertida.
+
+<br><br>Controles:<br>
+Player 1:
+Movimentação: setas
+Ataque: / 
+<br>
+Player 2:
+Movimentação: WASD
+Ataque: F
                     </p>
                 </div>
 
-                <div class="content-image">
-                    <div class="image-placeholder"></div>
+                <div class="conteudo-imagens">
+                    <div class="imagens-placeholder"></div>
                 </div>
 
             </div>
         </section>
 
         <!-- VÍDEOS -->
-        <section class="videos" id="videos">
+        <section class="videos" id="Gameplay">
             <div class="container">
 
-                <h2 class="section-title">Vídeos</h2>
+                <h2 class="section-title">Gameplay</h2>
 
                 <div class="video-grid">
-                    <div class="video-item">
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-
-                    <div class="video-item">
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-
-                    <div class="video-item">
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
-
-                    <div class="video-item">
-                        <iframe src="" frameborder="0"></iframe>
-                    </div>
+                     <div class="video-item">
+                    <div class="imagens-placeholder">
+                   <img src="site/imagens/Captura de tela 2026-04-12 193713.png">
                 </div>
-
             </div>
+
+                    <div class="video-item">
+                    <div class="imagens-placeholder">
+                    <img src="site/imagens/Captura de tela 2026-04-12 193752.png">
+                </div>
+            </div>
+
+                <div class="video-item">
+                    <div class="imagens-placeholder">
+                    <img src="site/imagens/Captura de tela 2026-04-14 205138.png">
+                </div>
+            </div>
+
+                    <div class="video-item">
+                       <div class="imagens-placeholder">
+                       <video controls>
+                       <source src="site/imagens/Video Project.mp4">
+                       </video>
+                     </div>
+                </div>
+        </div>
         </section>
 
     </main>
@@ -169,19 +185,65 @@
             <div class="footer-social">
                 <h4>Redes Sociais</h4>
                 <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">celular</a></li>
-                    <li><a href="#">email</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="tel:+44991355746">telefone</a></li>
+                    <li><a href="mailto:kassio.guardia@grupointegrado.br">email</a></li>
                 </ul>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; Desenvolvido por: Kassio Rodrigo Martins Guardia</p>
+            <p>Desenvolvido por: Kassio Rodrigo Martins Guardia</p>
         </div>
     </footer>
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("light-mode");
+}
 
+function pedirIdade() {
+    let idade = prompt("Digite sua idade:");
+
+    if (idade === null || idade === "") {
+        alert("Você não informou a idade.");
+        return;
+    }
+
+    if (isNaN(idade) || idade <= 0) {
+        alert("Digite uma idade válida!");
+        return;
+    }
+
+    idade = Number(idade);
+    const conteudos = document.querySelectorAll(".conteudo-sensivel");
+
+    if (idade >= 12) {
+        alert("✅ Acesso liberado!");
+        conteudos.forEach(el => el.style.filter = "blur(0px)");
+        document.body.classList.remove("bloqueado");
+    } else {
+        alert("❌ Acesso negado! Conteúdo censurado.");
+        conteudos.forEach(el => el.style.filter = "blur(8px)");
+        document.body.classList.add("bloqueado");
+    }
+}
+
+const ANO_LANCAMENTO = 2026;
+
+function verificarLancamento() {
+    const anoAtual = new Date().getFullYear();
+    if (anoAtual === ANO_LANCAMENTO) {
+        alert("🎉 Grande Lançamento do Jogo!");
+    }
+}
+
+// Única chamada ao carregar a página
+window.onload = function() {
+    pedirIdade();
+    verificarLancamento();
+};
+</script>
 </body>
 
 </html>

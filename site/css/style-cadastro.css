@@ -10,7 +10,6 @@ body {
     color: #e5e7eb;
 }
 
-/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -54,7 +53,6 @@ nav a:hover {
     color: #38bdf8;
 }
 
-/* CENTRALIZAÇÃO */
 .container {
     display: flex;
     justify-content: center;
@@ -62,7 +60,6 @@ nav a:hover {
     height: calc(100vh - 80px);
 }
 
-/* FORMULÁRIO */
 .form-box {
     background-color: #1e293b;
     padding: 40px;
@@ -101,7 +98,6 @@ nav a:hover {
     border: 1px solid #38bdf8;
 }
 
-/* BOTÃO */
 .btn {
     width: 100%;
     padding: 12px;
@@ -119,7 +115,6 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* TEXTO FINAL */
 .footer-text {
     text-align: center;
     margin-top: 15px;
@@ -129,4 +124,63 @@ nav a:hover {
 .footer-text a {
     color: #38bdf8;
     text-decoration: none;
+}
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .lista-do-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #020617;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 15px 0;
+    }
+
+    .lista-do-nav.ativar {
+        display: flex;
+    }
+
+    .lista-do-nav li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .lista-do-nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    .form-box {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .container {
+        padding: 20px;
+        height: auto;
+    }
 }

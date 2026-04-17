@@ -11,22 +11,27 @@
 <body>
 
     <header>
-        <div class="logo">
-            <a href="index.html">
+    <div class="logo">
+        <a href="index.html">
             <img src="site/imagens/logp.png" alt="logo do jogo">
-            </a>
-             <a href="index.html" class="logo-link">
-                    <span class="logo-text">hikari to kage</span>
-                </a>
-        </div>
-       
-        <nav>
-            <a href="index.html">inicio</a>
-            <a href="sobre.html">sobre</a>
-            <a href="index.html#contatos">contatos</a>
-            <a href="cadastro.html">cadastre-se</a>
-        </nav>
-    </header>
+        </a>
+
+        <a href="index.html" class="logo-link">
+            <span class="logo-text">hikari to kage</span>
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <nav class="nav">
+        <ul class="lista-do-nav">
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="sobre.html">sobre</a></li>
+            <li><a href="index.html#contatos">contatos</a></li>
+            <li><a href="cadastro.html">cadastre-se</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section class="hero">
         <div class="hero-content">
@@ -72,14 +77,18 @@
 
 </body>
 <script>
-/* DADOS DO JOGO */
+function toggleMenu() {
+    const menu = document.querySelector(".lista-do-nav");
+    menu.classList.toggle("ativar");
+}
+</script>
+<script>
 const nomeJogo = "Hikari to Kage";
 const descricao = "Um jogo de ação stealth onde ninjas rivais precisam cooperar para sobreviver.";
 const genero = "Ação / Stealth";
 const plataforma = "PC e Mobile";
 const modo = "Multiplayer Local";
 
-/* INJETANDO NO HTML */
 document.getElementById("titulo-jogo").textContent = nomeJogo;
 document.getElementById("descricao-jogo").textContent = descricao;
 document.getElementById("genero").textContent = genero;

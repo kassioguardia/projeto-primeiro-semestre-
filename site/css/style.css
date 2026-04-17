@@ -117,8 +117,8 @@ body {
 
 .banner-principal {
     position: relative;
-    height: 500px;
-    overflow: hidden;
+    min-height: 300px;
+    height: 60vh;
 }
 
 .imagem-banner {
@@ -133,7 +133,6 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center 35%;
-    /* 0% = topo, 50% = centro, 100% = fundo */
     border-radius: 10px;
 }
 
@@ -161,7 +160,6 @@ body {
     box-shadow: 0 0 30px rgba(99, 102, 241, 0.8);
 }
 
-/* CARDS */
 .atalhos-container {
     display: flex;
     gap: 20px;
@@ -363,7 +361,7 @@ h2#personagens {
 
 .video-item .imagens-placeholder {
     width: 100%;
-    aspect-ratio: 1 / 1; /* deixa quadrado perfeito */
+    aspect-ratio: 1 / 1; 
     background: #1e293b;
     border-radius: 10px;
     border: 2px solid rgba(56, 189, 248, 0.3);
@@ -382,7 +380,6 @@ h2#personagens {
     display: block;
 }
 
-/* FOOTER */
 .footer {
    background: var(--bg-dark);
     padding-top: 40px;
@@ -425,14 +422,13 @@ h2#personagens {
     align-items: center;
 }
 
-/* FOOTER BOTTOM */
 .footer-bottom {
     text-align: center;
     padding: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin-top: 20px;
     font-size: 14px;
-    background-color: (--bg-dark);
+    background-color: var(--bg-dark);
 }
 .conteudo-sensivel {
     filter: blur(8px);
@@ -442,74 +438,93 @@ h2#personagens {
     pointer-events: none;
     user-select: none;
 }
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
 
     .header-container {
         flex-direction: column;
-        gap: 10px;
+        text-align: center;
     }
-
+.menu-toggle {
+    display: block;
+   }
     .nav-list {
+    display: none;
+    flex-direction: column;
+    background: var(--bg);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+    }
+
+.nav-list.ativar {
+    display: flex;
+}
+
+    .btn-play {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .btn-jogar {
+        top: 60%;
+    }
+
+    .atalhos-container {
         flex-direction: column;
-        align-items: center;
     }
 
-    .hero-banner {
-        height: 60vh;
-    }
-
-    .content-grid {
-        flex-direction: column;
-    }
-
-    .titles-row {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .titles-row h2:last-child {
-        flex: 0 0 auto;
-    }
-
-    .story-section {
-        flex-direction: column;
-    }
-
-    .images-section {
+    .atalho {
         width: 100%;
     }
 
-    .content-images-grid {
+    .seção-historia {
+        flex-direction: column;
+    }
+
+    .conteudo-imagens-grid {
         flex-direction: row;
     }
 
-    .content-images-grid .image-placeholder {
-        flex: 1;
+    .conteudo-imagens-grid .imagens-placeholder {
         min-height: 100px;
+    }
+
+    .titulo-da-historia {
+        flex-direction: column;
+        text-align: center;
     }
 
 }
 
 @media (max-width: 480px) {
-    .images-section {
+    .seção-de-imagensn {
         width: 100%;
     }
 
-    .titles-row {
+    .titulo-da-historia {
         flex-direction: column;
     }
 
-    .titles-row h2:last-child {
+    .titulo-da-historia h2:last-child {
         flex: 0 0 auto;
     }
 
-    .content-images-grid {
+    .conteudo-imagens-grid {
         flex-direction: row;
     }
 
-    .content-images-grid .image-placeholder {
+    .conteudo-imagens-grid .image-placeholder {
         min-height: 80px;
     }
 }

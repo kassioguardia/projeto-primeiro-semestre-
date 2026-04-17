@@ -21,6 +21,8 @@
                 <a href="index.html">
                     <img src="site/imagens/logp.png" alt="logo do jogo">
                 </a>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
                 <a href="index.html" class="logo-link">
                     <span class="logo-text">hikari to kage</span>
                 </a>
@@ -115,7 +117,7 @@
             </div>
         </section>
 
-        <section class="content-section alt" id="Mecânicas">
+        <section class="content-section alt" id="Mecanicas">
             <div class="container content-grid">
 
                 <div class="content-text">
@@ -141,7 +143,6 @@ Ataque: F
             </div>
         </section>
 
-        <!-- VÍDEOS -->
         <section class="videos" id="Gameplay">
             <div class="container">
 
@@ -178,7 +179,6 @@ Ataque: F
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer" id="contatos">
         <div class="container footer-container">
 
@@ -238,11 +238,14 @@ function verificarLancamento() {
     }
 }
 
-// Única chamada ao carregar a página
 window.onload = function() {
     pedirIdade();
     verificarLancamento();
 };
+function toggleMenu() {
+    const menu = document.querySelector(".nav-list");
+    menu.classList.toggle("ativar");
+}
 </script>
 </body>
 
